@@ -1,8 +1,7 @@
-// libraries
 import express, { Application } from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
-// routes
+
 import IndexRoutes from "./routes/index.routes"
 import ProductsRoutes from "./routes/products.routes"
 import SalesRoutes from "./routes/sales.routes"

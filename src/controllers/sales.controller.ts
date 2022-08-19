@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { connect } from '../dbconnection'
-import { Sale } from '../interfaces/sale.interface'
+import { connect } from '../database/dbconnection'
+import { Sale } from '../models/interfaces/sale.interface'
 
 const table: string = 'sales'
 

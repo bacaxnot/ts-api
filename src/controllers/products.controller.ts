@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { connect } from '../dbconnection'
+import { connect } from '../database/dbconnection'
 
 const table: string = 'medicines'
 

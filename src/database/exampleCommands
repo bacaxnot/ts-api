@@ -1,0 +1,14 @@
+COMANDOS EMPLEADOS
+==========================================================================
+
+CREATE (u:User{username:'grupo3',password:'123',bio:'ejemplo'}) return u
+
+CREATE (c:Comment{body:'Another comment'}) return c
+
+CREATE (a:Article{title:'Third article',body:'ccc',description:'the article is...'}) return a
+
+match (c:Comment),(u:User) where c.body='Comentario realizado' AND u.username='grupocoex' create (c)-[r:made]->(u) return r
+
+match (a:Article),(u:User) where a.title='Third article' AND u.username='grupo3' create (a)-[r:madeBy]->(u) return r
+
+MATCH (n) RETURN n LIMIT 25 -> Consulta y rango de datos

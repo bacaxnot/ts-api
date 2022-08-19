@@ -3,9 +3,9 @@ import morgan from 'morgan'
 import cors from 'cors'
 
 import IndexRoutes from "./router/index.routes"
-import ProductsRoutes from "./router/products.routes"
-import SalesRoutes from "./router/sales.routes"
-import ImagesRoutes from "./router/images.routes"
+import UserRoutes from "./router/user.routes"
+import CommentRoutes from "./router/comment.routes"
+import ArticleRoutes from "./router/article.routes"
 
 export class App {
     private app: Application
@@ -26,9 +26,9 @@ export class App {
     }
     routes(){
         this.app.use('/v1', IndexRoutes)
-        this.app.use('/v1/products', ProductsRoutes)
-        this.app.use('/v1/sales', SalesRoutes)
-        this.app.use('/v1/images', ImagesRoutes)
+        this.app.use('/v1/users', UserRoutes)
+        this.app.use('/v1/comments', CommentRoutes)
+        this.app.use('/v1/articles', ArticleRoutes)
     }
     async listen(){
         let PORT = this.app.get('port')

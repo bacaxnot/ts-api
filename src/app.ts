@@ -2,10 +2,10 @@ import express, { Application } from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 
-import IndexRoutes from "./routes/index.routes"
-import ProductsRoutes from "./routes/products.routes"
-import SalesRoutes from "./routes/sales.routes"
-import ImagesRoutes from "./routes/images.routes"
+import IndexRoutes from "./router/index.routes"
+import ProductsRoutes from "./router/products.routes"
+import SalesRoutes from "./router/sales.routes"
+import ImagesRoutes from "./router/images.routes"
 
 export class App {
     private app: Application
